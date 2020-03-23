@@ -66,7 +66,7 @@ from bpy.props import (StringProperty,
 from bpy.app.handlers import persistent
 from mathutils import Vector, Matrix
 
-log_path = os.path.join(bpy.context.user_preferences.filepaths.temporary_directory, "molblend_log.txt")
+log_path = os.path.join(bpy.context.preferences.filepaths.temporary_directory, "molblend_log.txt")
 log_is_writeable = True
 
 try:
